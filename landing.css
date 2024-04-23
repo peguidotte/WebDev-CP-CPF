@@ -1,0 +1,65 @@
+
+body {
+    margin: 0; /* Remove as margens padrão do corpo */
+}
+
+/* Estilos para a barra de navegação */
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #991F2E;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0; /* Remove a margem superior da barra de navegação */
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Centralizar os elementos */
+    align-items: center; /* Alinhar itens verticalmente */
+}
+
+
+.logo img {
+    height: 70px; /* Ajuste a altura conforme necessário */
+    margin-left: 27vmin;/* Espaçamento da esquerda para a logo */
+}
+
+
+
+nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 20%;
+}
+nav a:hover {
+    color: black;
+}
+
+.conteudo {
+    padding: 20px;
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Direção das flexbox */
+    align-items: center; /* Centralizar na horizontal */
+    text-align: center; /* Centralizar texto */
+}
+
+
+.titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.destaque_titulo{
+    font-size: 30px;
+    color: #991F2E;
+}
+
+
+.imagem_principal{
+    width: 25%;
+}
+
+.paragrafo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
+}

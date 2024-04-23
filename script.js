@@ -1,6 +1,6 @@
 //INDEX.HTML - Botão maior de idade
 function botaosim(){
-    window.location.href = "about.html";
+    window.location.href = "landing.html";
 }
 
 function botaonao() {
