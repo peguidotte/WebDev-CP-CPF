@@ -7,65 +7,43 @@ body {
     align-items: center; /* Centraliza o conteúdo verticalmente */
     height: 100vh; /* Define a altura do corpo para ocupar toda a altura da tela */
     position: relative;
+    background-color: #FDF8E5;
 }
 
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(Imagens/vinheria.jpg);
-    background-size: cover;
-    background-position: center;
-    filter: contrast(150%); /* Aplicando filtro de contraste */
-}
-
-.top-image {
-    position: absolute; /* Posiciona absolutamente a imagem */
-    top: 0; /* Alinha a imagem no topo da página */
-    left: 0; /* Alinha a imagem à esquerda da página */
-    width: 100%; /* Ocupa toda a largura disponível */
-}
-
-.top-image img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-    height: auto; /* Permite que a altura seja ajustada automaticamente */
-    max-width: 1920px; /* Define a largura máxima da imagem */
-    height: 150px; /* Define a altura da imagem */
-    filter: contrast(180%); /* Aplicando filtro de contraste */
-    display: flex;
-    flex-wrap: wrap;
-}
 
 #bloco {
-    width: 50vmin;
-    height: 22vmin;
-    border-radius: 20px;
-    background-color: rgb(64, 8, 10, 0.5); /* Cor de fundo com transparência para criar um efeito de embaçamento */
-    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque ao background */
+    width: 90vmin;
+    height: 30vmin;
     text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #FDF8E5;
 }
 
 
 #titulo {
     margin-top: 20px;
-    color: white;
-    border-radius: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
     padding: 10px; /* Adiciona um preenchimento ao redor do texto para melhorar a legibilidade */
 }
+
+
+
+.destaque_titulo{
+    color:#991F2E;
+}
+
+
 
 #botaosim, #botaonao {
     height: 8vmin;
     width: 20vmin;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência para criar um efeito de embaçamento */
-    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque ao background */
+    background-color:#991F2E; /* Cor de fundo com transparência para criar um efeito de embaçamento */
     padding: 10px; /* Adiciona um preenchimento ao redor do texto para melhorar a legibilidade */
-    border-radius: 25px;
+    border-radius:17px;
     font-size: 15px;
 }

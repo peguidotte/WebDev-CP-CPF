@@ -3,7 +3,7 @@ function botaosim(){
 }
 
 function botaonao() {
-    alert("Você será redirecionado para o site inicial do Google, pois é menor de 18 anos!");
+    alert("Você será redirecionado para o site inicial do Google, pois não tem a idade necessaria!");
     window.location.href = "https://www.google.com";
 }
 
