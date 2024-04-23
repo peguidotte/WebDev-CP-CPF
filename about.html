@@ -6,32 +6,40 @@
     <title>Vinheria Agnello</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <h1>Vinhos Disponíveis</h1>
-    <div>
-        <h3>Vinho Tinto Exemplar</h3>
-        <p>coloração vermelha, sendo que a tonalidade pode variar entre púrpura e granada com diferentes intensidades. Dado que a pigmentação está presente nas cascas, este tipo de vinho só pode ser feito com uvas também tintas.</p>
-        <button onclick="comprarvinho()">Comprar</button>
+    
+    <div class="container">
+        <div class="card">
+            <h3>Vinho Tinto Sangue Rosa</h3>
+            <p>Coloração vermelha, variando entre púrpura e granada. A pigmentação está presente nas cascas, sendo possível somente com uvas tintas.</p>
+            <h5>$120</h5>
+            <button onclick="comprarvinho1()" id="botaocomprar1">Comprar</button>
+        </div>
+        <div class="card">
+            <h3>Vinho Rose Fretado</h3>
+            <p>Coloração rosa intensa, aromas de morango, framboesa e pétalas de rosas, obtidos através de uvas com maturação avançada.</p>
+            <h5>$210</h5>
+            <button onclick="comprarvinho2()" id="botaocomprar2">Comprar</button>
+        </div>
+        <div class="card">
+            <h3>Vinho Branco Letui</h3>
+            <p>Sabores secos e frutados de frutas cítricas, maçã, frutas de caroço e flores.</p>
+            <h5>$500</h5>
+            <button onclick="comprarvinho3()" id="botaocomprar3">Comprar</button>
+        </div>
+        <div class="card">
+            <h3>Vinho Tinto Porteiro</h3>
+            <p>Sabores de cassis, ameixas e cerejas, com notas de cedro ou tabaco quando envelhecido em carvalho.</p>
+            <h5>$156</h6>
+            <button onclick="comprarvinho4()" id="botaocomprar4">Comprar</button>
+        </div>
+        <div class="card">
+            <h3>Vinho Branco Olho de cabra</h3>
+            <p>Vinho tranquilo de coloração amarela variada, quase incolor, leves e ácidos, ideais para consumir a 10º C e acompanham bem comidas leves.</p>
+            <h5>$100</h5>
+            <button onclick="comprarvinho5()" id="botaocomprar5">Comprar</button>
+        </div>
     </div>
-    <div>
-        <h3>Vinho Tinto Exemplar</h3>
-        <p>coloração vermelha, sendo que a tonalidade pode variar entre púrpura e granada com diferentes intensidades. Dado que a pigmentação está presente nas cascas, este tipo de vinho só pode ser feito com uvas também tintas.</p>
-        <button onclick="comprarvinho()">Comprar</button>
-    </div>
-    <div>
-        <h3>Vinho Tinto Exemplar</h3>
-        <p>coloração vermelha, sendo que a tonalidade pode variar entre púrpura e granada com diferentes intensidades. Dado que a pigmentação está presente nas cascas, este tipo de vinho só pode ser feito com uvas também tintas.</p>
-        <button onclick="comprarvinho()">Comprar</button>
-    </div>
-    <div>
-        <h3>Vinho Tinto Exemplar</h3>
-        <p>coloração vermelha, sendo que a tonalidade pode variar entre púrpura e granada com diferentes intensidades. Dado que a pigmentação está presente nas cascas, este tipo de vinho só pode ser feito com uvas também tintas.</p>
-        <button onclick="comprarvinho()">Comprar</button>
-    </div>
-    <div>
-        <h3>Vinho Branco Exemplar</h3>
-        <p>Vinhos tranquilos de coloração amarela em variados tons, em alguns casos quase incolor e com concentrações imperceptíveis de tanino. São vinhos naturalmente mais leves e ácidos, ideais para serem consumidos a temperaturas próximas a 10º C e acompanham bem comidas leves.</p>
-        <button onclick="comprarvinho()">Comprar</button>
-        <script src="script.js"></script>
-    </div>
+</body>
