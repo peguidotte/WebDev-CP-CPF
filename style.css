@@ -31,9 +31,11 @@ body {
 .top-image img {
     width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
     height: auto; /* Permite que a altura seja ajustada automaticamente */
-    max-width: 1750px; /* Define a largura máxima da imagem */
+    max-width: 1920px; /* Define a largura máxima da imagem */
     height: 150px; /* Define a altura da imagem */
     filter: contrast(180%); /* Aplicando filtro de contraste */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #bloco {
@@ -46,7 +48,7 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
-    flex-direction: column; /* Define a direção dos itens flexíveis para serem empilhados verticalmente */
+    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
 }
 
 
