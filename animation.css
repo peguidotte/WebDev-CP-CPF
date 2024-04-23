@@ -1,0 +1,18 @@
+#botaosim:hover {
+    background-color: rgb(64, 8, 10, 0.5);
+    width: 22vmin;
+    transition: background-color 1s, width 1s;
+}
+
+#botaonao:hover {
+    background-color: rgb(64, 8, 10, 0.5);
+    width: 22vmin;
+    transition: background-color 1s, width 1s;
+}
+
+#botaosim:not(:hover),
+#botaonao:not(:hover) {
+    background-color: rgba(0, 0, 0, 0.5); /* Volta para a cor branca quando não estiver em estado de hover */
+    width: 20vmin; /* Volta para o tamanho original quando não estiver em estado de hover */
+    transition: background-color 1s, width 1s;
+}
