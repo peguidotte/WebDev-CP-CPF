@@ -5,7 +5,7 @@
 }
 
 #botaonao:hover {
-    background-color: rgb(64, 8, 10, 0.5);
+    background-color: rgb(255, 255, 255, 0.5);
     width: 22vmin;
     transition: background-color 1s, width 1s;
 }

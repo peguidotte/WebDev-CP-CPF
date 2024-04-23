@@ -40,6 +40,8 @@ body {
     width: 50vmin;
     height: 22vmin;
     border-radius: 20px;
+    background-color: rgb(64, 8, 10, 0.5); /* Cor de fundo com transparência para criar um efeito de embaçamento */
+    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque ao background */
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
@@ -51,8 +53,6 @@ body {
 #titulo {
     margin-top: 20px;
     color: white;
-    background-color: rgb(64, 8, 10, 0.5); /* Cor de fundo com transparência para criar um efeito de embaçamento */
-    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque ao background */
     border-radius: 25px;
     padding: 10px; /* Adiciona um preenchimento ao redor do texto para melhorar a legibilidade */
 }
