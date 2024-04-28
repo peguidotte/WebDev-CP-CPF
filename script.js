@@ -20,19 +20,100 @@ var preco_vinho2 = 210;
 var preco_vinho3 = 500;
 var preco_vinho4 = 156;
 var preco_vinho5 = 100;
+var qtd_vinho1 = 0;
+var qtd_vinho2 = 0;
+var qtd_vinho3 = 0;
+var qtd_vinho4 = 0;
+var qtd_vinho5 = 0;
 
-function comprarvinho1(){
-    alert (`${vinho1} adicionado ao carrinho com sucesso!`);
+function comprarvinho1() {
+    qtd_vinho1++;
+    var valor_total = (qtd_vinho1 * preco_vinho1)+(qtd_vinho2 * preco_vinho2)+(qtd_vinho3 * preco_vinho3)+(qtd_vinho4 * preco_vinho4)+(qtd_vinho5 * preco_vinho5);
+    Swal.fire({
+        title: 'Adicionado ao carrinho!',
+        text: `${vinho1} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
+        icon: 'success',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ir para o carrinho',
+        cancelButtonText: 'Continuar a comprar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = 'pagina_de_login_e_senha.html'; // substitua pelo URL da sua página de login e senha
+        }
+    });
 }
-function comprarvinho2(){
-    alert (`${vinho2} adicionado ao carrinho com sucesso!`);
+function comprarvinho2() {
+    qtd_vinho2++;
+    var valor_total = (qtd_vinho1 * preco_vinho1)+(qtd_vinho2 * preco_vinho2)+(qtd_vinho3 * preco_vinho3)+(qtd_vinho4 * preco_vinho4)+(qtd_vinho5 * preco_vinho5);
+    Swal.fire({
+        title: 'Adicionado ao carrinho!',
+        text: `${vinho2} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
+        icon: 'success',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ir para o carrinho',
+        cancelButtonText: 'Continuar a comprar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = 'pagina_de_login_e_senha.html'; // substitua pelo URL da sua página de login e senha
+        }
+    });
 }
-function comprarvinho3(){
-    alert (`${vinho3} adicionado ao carrinho com sucesso!`);
+function comprarvinho3() {
+    qtd_vinho3++;
+    var valor_total = (qtd_vinho1 * preco_vinho1)+(qtd_vinho2 * preco_vinho2)+(qtd_vinho3 * preco_vinho3)+(qtd_vinho4 * preco_vinho4)+(qtd_vinho5 * preco_vinho5);
+    Swal.fire({
+        title: 'Adicionado ao carrinho!',
+        text: `${vinho3} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
+        icon: 'success',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ir para o carrinho',
+        cancelButtonText: 'Continuar a comprar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = 'pagina_de_login_e_senha.html'; // substitua pelo URL da sua página de login e senha
+        }
+    });
 }
-function comprarvinho4(){
-    alert (`${vinho4} adicionado ao carrinho com sucesso!`);
+function comprarvinho4() {
+    qtd_vinho4++;
+    var valor_total = (qtd_vinho1 * preco_vinho1)+(qtd_vinho2 * preco_vinho2)+(qtd_vinho3 * preco_vinho3)+(qtd_vinho4 * preco_vinho4)+(qtd_vinho5 * preco_vinho5);
+    Swal.fire({
+        title: 'Adicionado ao carrinho!',
+        text: `${vinho4} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
+        icon: 'success',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ir para o carrinho',
+        cancelButtonText: 'Continuar a comprar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = 'pagina_de_login_e_senha.html'; // substitua pelo URL da sua página de login e senha
+        }
+    });
 }
-function comprarvinho5(){
-    alert (`${vinho5} adicionado ao carrinho com sucesso!`);
+function comprarvinho5() {
+    qtd_vinho5++;
+    var valor_total = (qtd_vinho1 * preco_vinho1)+(qtd_vinho2 * preco_vinho2)+(qtd_vinho3 * preco_vinho3)+(qtd_vinho4 * preco_vinho4)+(qtd_vinho5 * preco_vinho5);
+    Swal.fire({
+        title: 'Adicionado ao carrinho!',
+        text: `${vinho5} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
+        icon: 'success',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ir para o carrinho',
+        cancelButtonText: 'Continuar a comprar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = 'pagina_de_login_e_senha.html'; // substitua pelo URL da sua página de login e senha
+        }
+    });
 }
+
