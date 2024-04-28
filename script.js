@@ -40,7 +40,7 @@ function comprarvinho1() {
         cancelButtonText: 'Continuar a comprar'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'pagina_de_login_e_senha.html'; // substitua pelo URL da sua página de login e senha
+            window.location.href = 'login.html'
         }
     });
 }
@@ -58,7 +58,7 @@ function comprarvinho2() {
         cancelButtonText: 'Continuar a comprar'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'pagina_de_login_e_senha.html'; // substitua pelo URL da sua página de login e senha
+            window.location.href = 'login.html'
         }
     });
 }
@@ -76,7 +76,7 @@ function comprarvinho3() {
         cancelButtonText: 'Continuar a comprar'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'pagina_de_login_e_senha.html'; // substitua pelo URL da sua página de login e senha
+            window.location.href = 'login.html'
         }
     });
 }
@@ -94,7 +94,7 @@ function comprarvinho4() {
         cancelButtonText: 'Continuar a comprar'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'pagina_de_login_e_senha.html'; // substitua pelo URL da sua página de login e senha
+            window.location.href = 'login.html'
         }
     });
 }
@@ -104,7 +104,7 @@ function comprarvinho5() {
     Swal.fire({
         title: 'Adicionado ao carrinho!',
         text: `${vinho5} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
-        icon: 'success',
+        icon: 'question',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
@@ -112,8 +112,7 @@ function comprarvinho5() {
         cancelButtonText: 'Continuar a comprar'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'pagina_de_login_e_senha.html'; // substitua pelo URL da sua página de login e senha
+            window.location.href = 'login.html'
         }
     });
 }
-
