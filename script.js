@@ -116,3 +116,42 @@ function comprarvinho5() {
         }
     });
 }
+function sugestao1() {
+    Swal.fire({
+        title: 'Sugestões de Harmonização',
+        text: 'Combina com carnes vermelhas grelhadas, massas com molhos intensos, e queijos maduros.',
+        icon: 'info'
+    });
+}
+
+function sugestao2() {
+    Swal.fire({
+        title: 'Sugestões de Harmonização',
+        text: 'Perfeito com saladas frescas, frutos do mar, e pratos levemente picantes.',
+        icon: 'info'
+    });
+}
+
+function sugestao3() {
+    Swal.fire({
+        title: 'Sugestões de Harmonização',
+        text: 'Ideal para acompanhar peixes, frutos do mar, e pratos com molhos leves.',
+        icon: 'info'
+    });
+}
+
+function sugestao4() {
+    Swal.fire({
+        title: 'Sugestões de Harmonização',
+        text: 'Excelente com churrasco, pratos com molho barbecue e queijos fortes.',
+        icon: 'info'
+    });
+}
+
+function sugestao5() {
+    Swal.fire({
+        title: 'Sugestões de Harmonização',
+        text: 'Harmoniza bem com saladas, pratos à base de frango e frutos do mar.',
+        icon: 'info'
+    });
+}

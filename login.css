@@ -30,7 +30,6 @@ body {
     border-radius: 4px;
 }
 
-
 #login-form button {
     width: 100%;
     padding: 10px;
@@ -47,4 +46,29 @@ body {
 
 .swal2-container {
     z-index: 99999; /* Ajuste o valor de z-index conforme necessário */
+}
+
+#container-carrinho-desconto {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#container-compra,
+#container-desconto {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    flex-basis: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+#itens-carrinho {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
 }
