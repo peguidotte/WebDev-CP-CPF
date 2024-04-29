@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+</head>
+<body>
+
+<div class="container">
+    <h2>Entre em Contato</h2>
+    <form  method="post">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required>
+        
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required>
+        
+        <label for="assunto">Assunto:</label>
+        <textarea id="assunto" name="assunto" rows="4" required></textarea>
+        
+        <button id="botaocadastro" onclick="cadastro()">Enviar</button>
+    </form>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="formulario.js"></script>
+</body>
+</html>
