@@ -64,15 +64,53 @@ body {
     color: #666;
 }
 
-button {
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+#container-carrinho-desconto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+#container-desconto, #container-compra {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+h1, h3 {
+    color: #5a5a5a;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffffff96;
+    color: rgb(0, 0, 0);
+    border: 2px solid #8B0000;
+    border-radius: 5px, red;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-
+button:hover {
+    background-color: #680b08;
+    color: #eee4e4;
+}
