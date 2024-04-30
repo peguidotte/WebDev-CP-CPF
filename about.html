@@ -64,7 +64,7 @@
                 <form id="discount-form">
                     <h3>Aplicar Cupom de Desconto</h3>
                     <input type="text" id="discount-code" placeholder="Digite o código do cupom" required>
-                    <button type="submit" onclick="desconto()">Aplicar Desconto</button>
+                    <button type="button" onclick="btndesconto()">Aplicar Desconto</button>
                 </form>
             </div>
             <!-- Carrinho de compras -->
@@ -80,6 +80,7 @@
                 </div>
                 <p>Total: <span id="total_compra"></span></p>
                 <button onclick="finalizarCompra()">Finalizar Compra</button>
+                <button onclick="resetPage()">Resetar Compra</button>
             </div>
         </div>
     </div>
