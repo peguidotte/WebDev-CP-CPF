@@ -25,95 +25,100 @@ var qtd_vinho2 = 0;
 var qtd_vinho3 = 0;
 var qtd_vinho4 = 0;
 var qtd_vinho5 = 0;
-var valor_total = 0;
+var item1 = document.getElementById("item1");
+var item2 = document.getElementById("item2");
+var item3 = document.getElementById("item3");
+var item4 = document.getElementById("item4");
+var item5 = document.getElementById("item5");
+var total_compra = document.getElementById("total_compra");
 
 function comprarvinho1() {
-    qtd_vinho1++;
+    qtd_vinho1 = parseInt(document.getElementById('qtd_vinho1').value);
     var valor_total = (qtd_vinho1 * preco_vinho1)+(qtd_vinho2 * preco_vinho2)+(qtd_vinho3 * preco_vinho3)+(qtd_vinho4 * preco_vinho4)+(qtd_vinho5 * preco_vinho5);
     Swal.fire({
-        title: 'Adicionado ao carrinho!',
-        text: `${vinho1} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
-        icon: 'success',
+        title: 'Confirme!',
+        text: `${qtd_vinho1} ${vinho1} (R$${qtd_vinho1 * preco_vinho1.toFixed(2)}) será adicionado ao carrinho! Valor total R$${valor_total.toFixed(2)}`,
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Ir para o carrinho',
-        cancelButtonText: 'Continuar a comprar'
+        confirmButtonText: 'Quero adicionar ao carrinho!',
+        cancelButtonText: 'Cancelar'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'login.html'
+            item1.innerHTML = `${qtd_vinho1} ${vinho1} (R$${qtd_vinho1 * preco_vinho1.toFixed(2)})`
+            total_compra.innerHTML = `R$${valor_total}`
         }
     });
 }
 function comprarvinho2() {
-    qtd_vinho2++;
+    qtd_vinho2 = parseInt(document.getElementById('qtd_vinho2').value);
     var valor_total = (qtd_vinho1 * preco_vinho1)+(qtd_vinho2 * preco_vinho2)+(qtd_vinho3 * preco_vinho3)+(qtd_vinho4 * preco_vinho4)+(qtd_vinho5 * preco_vinho5);
     Swal.fire({
-        title: 'Adicionado ao carrinho!',
-        text: `${vinho2} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
-        icon: 'success',
+        title: 'Confirme!',
+        text: `${qtd_vinho2} ${vinho2} (R$${qtd_vinho2 * preco_vinho2.toFixed(2)}) adicionado ao carrinho com sucesso! Valor total R$${valor_total.toFixed(2)}`,
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Ir para o carrinho',
-        cancelButtonText: 'Continuar a comprar'
+        confirmButtonText: 'Quero adicionar ao carrinho!',
+        cancelButtonText: 'Cancelar'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'login.html'
+            item2.innerHTML = `${qtd_vinho2} ${vinho2} (R$${qtd_vinho2 * preco_vinho2.toFixed(2)})`
+            total_compra.innerHTML = `R$${valor_total}`
         }
     });
 }
 function comprarvinho3() {
-    qtd_vinho3++;
+    var qtd_vinho3 = parseInt(document.getElementById('qtd_vinho3').value);
     var valor_total = (qtd_vinho1 * preco_vinho1)+(qtd_vinho2 * preco_vinho2)+(qtd_vinho3 * preco_vinho3)+(qtd_vinho4 * preco_vinho4)+(qtd_vinho5 * preco_vinho5);
     Swal.fire({
-        title: 'Adicionado ao carrinho!',
-        text: `${vinho3} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
-        icon: 'success',
+        title: 'Confirme!',
+        text: `${qtd_vinho3} ${vinho3} (R$${qtd_vinho3 * preco_vinho3.toFixed(2)}) será adicionado ao carrinho! Valor total R$${valor_total.toFixed(2)}`,
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Ir para o carrinho',
-        cancelButtonText: 'Continuar a comprar'
+        confirmButtonText: 'Quero adicionar ao carrinho!',
+        cancelButtonText: 'Cancelar'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'login.html'
+            item3.innerHTML = `${qtd_vinho3} ${vinho3} (R$${qtd_vinho3 * preco_vinho3.toFixed(2)})`
+            total_compra.innerHTML = `R$${valor_total}`
         }
     });
 }
 function comprarvinho4() {
-    qtd_vinho4++;
-    var valor_total = (qtd_vinho1 * preco_vinho1)+(qtd_vinho2 * preco_vinho2)+(qtd_vinho3 * preco_vinho3)+(qtd_vinho4 * preco_vinho4)+(qtd_vinho5 * preco_vinho5);
+    var qtd_vinho4 = parseInt(document.getElementById('qtd_vinho4').value);
+    var valor_total =+ preco_vinho4 * qtd_vinho4; 
     Swal.fire({
-        title: 'Adicionado ao carrinho!',
-        text: `${vinho4} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
-        icon: 'success',
+        title: 'Confirme!',
+        text: `${qtd_vinho4} ${vinho4} (R$${qtd_vinho4 * preco_vinho4.toFixed(2)}) será adicionado ao carrinho! Valor total R$${valor_total.toFixed(2)}`,
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Ir para o carrinho',
-        cancelButtonText: 'Continuar a comprar'
+        confirmButtonText: 'Quero adicionar ao carrinho!',
+        cancelButtonText: 'Cancelar'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'login.html'
+            item4.innerHTML = `${qtd_vinho4} ${vinho4} (R$${qtd_vinho4 * preco_vinho4.toFixed(2)})`
+            total_compra.innerHTML = `R$${valor_total}`
         }
     });
 }
 function comprarvinho5() {
-    qtd_vinho5++;
-    var valor_total = (qtd_vinho1 * preco_vinho1)+(qtd_vinho2 * preco_vinho2)+(qtd_vinho3 * preco_vinho3)+(qtd_vinho4 * preco_vinho4)+(qtd_vinho5 * preco_vinho5);
+    var qtd_vinho5 = parseInt(document.getElementById('qtd_vinho5').value);
+    var valor_total =+ preco_vinho5 * qtd_vinho5; 
     Swal.fire({
-        title: 'Adicionado ao carrinho!',
-        text: `${vinho5} adicionado ao carrinho com sucesso! Valor atual da compra: R$${valor_total.toFixed(2)}`,
-        icon: 'question',
+        title: 'Confirme!',
+        text: `${qtd_vinho5} ${vinho5} (R$${qtd_vinho5 * preco_vinho5.toFixed(2)}) será adicionado ao carrinho! Valor total R$${valor_total.toFixed(2)}`,
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Ir para o carrinho',
-        cancelButtonText: 'Continuar a comprar'
+        confirmButtonText: 'Quero adicionar ao carrinho!',
+        cancelButtonText: 'Cancelar'
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = 'login.html'
+            item5.innerHTML = `${qtd_vinho5} ${vinho5} (R$${qtd_vinho5 * preco_vinho5.toFixed(2)})`
+            total_compra.innerHTML = `R$${valor_total}`
         }
     });
 }
@@ -157,6 +162,18 @@ function sugestao5() {
     });
 }
 
+function finalizarCompra() {
+    Swal.fire({
+        title: "Quase lá!",
+        text: "Faça o login para validarmos sua compra!",
+        confirmButtonText: 'Vamos lá!',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = 'login.html'
+        }
+    });
+}
+
 // LOGIN e DESCONTO. 
 
 function login() {
@@ -168,8 +185,6 @@ function login() {
     if (username_cadastrado === username && senha_cadastrada === password) {
         document.getElementById('login').style.display = 'none';
         document.getElementById('container-carrinho-desconto').style.display = 'flex'; // Mostra o container do carrinho e cupom de desconto
-        var total_compra = document.getElementById("total_compra"); // Corrigido aqui
-        total_compra.innerText = valor_total.toFixed(2); // Atualiza o valor total de compra no elemento HTML
     } else {
         Swal.fire({
             title: 'Senha ou usuário incorretos!',
