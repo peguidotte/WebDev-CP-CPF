@@ -1,22 +1,25 @@
 /* Estilo para os botões de sugestão */
 #botaosugestao1, #botaosugestao2, #botaosugestao3, #botaosugestao4, #botaosugestao5 {
-    background-color: rgba(214, 166, 168, 0.9); /* Cor mais escura para melhor visibilidade no hover */
+    background-color: rgba(209, 126, 129, 0.9); /* Cor mais escura para melhor visibilidade no hover */
     transition: background-color 1s; /* Suaviza a transição da cor de fundo */
 }
 
 /* Estilo para hover nos botões de sugestão */
 #botaosugestao1:hover, #botaosugestao2:hover, #botaosugestao3:hover, #botaosugestao4:hover, #botaosugestao5:hover {
-    background-color: #e9dedd; /* Cor de fundo ao passar o mouse */
+    background-color: #ee301f; /* Cor de fundo ao passar o mouse */
     color: #fff; /* Cor do texto ao passar o mouse */
 }
 
-/* Refinamento do hover em todos os botões de compra */
+/* Estilo base para os botões de compra */
+#botaocomprar1, #botaocomprar2, #botaocomprar3, #botaocomprar4, #botaocomprar5 {
+    border: 2px solid #8B0000; /* Borda cor de vinho */
+}
+
+/* Estilo para hover nos botões de compra */
 #botaocomprar1:hover, #botaocomprar2:hover, #botaocomprar3:hover, #botaocomprar4:hover, #botaocomprar5:hover {
-    background-color: #680b08; /* Fundo branco */
-    color: #eee4e4; /* Texto na cor do vinho */
-    border-radius: 2px solid #0000; /* Borda sólida */
+    background-color: #680b08; /* Cor de fundo ao passar o mouse */
+    color: #eee4e4; /* Cor do texto ao passar o mouse */
     transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para hover */
-    
 }
 
 body {
