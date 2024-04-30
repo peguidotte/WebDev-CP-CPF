@@ -25,6 +25,7 @@ var qtd_vinho2 = 0;
 var qtd_vinho3 = 0;
 var qtd_vinho4 = 0;
 var qtd_vinho5 = 0;
+var valor_total = 0;
 
 function comprarvinho1() {
     qtd_vinho1++;
@@ -154,4 +155,27 @@ function sugestao5() {
         text: 'Harmoniza bem com saladas, pratos à base de frango e frutos do mar.',
         icon: 'info'
     });
+}
+
+// LOGIN e DESCONTO. 
+
+function login() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var senha_cadastrada = '1234';
+    var username_cadastrado = 'fiap';
+
+    if (username_cadastrado === username && senha_cadastrada === password) {
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('container-carrinho-desconto').style.display = 'flex'; // Mostra o container do carrinho e cupom de desconto
+        var total_compra = document.getElementById("total_compra"); // Corrigido aqui
+        total_compra.innerText = valor_total.toFixed(2); // Atualiza o valor total de compra no elemento HTML
+    } else {
+        Swal.fire({
+            title: 'Senha ou usuário incorretos!',
+            icon: 'error',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'Tente novamente',
+        });
+    }
 }
