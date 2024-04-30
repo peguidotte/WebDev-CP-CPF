@@ -1,26 +1,27 @@
 /* Estilo para os botões de sugestão */
 #botaosugestao1, #botaosugestao2, #botaosugestao3, #botaosugestao4, #botaosugestao5 {
-    background-color: #fff; /* Fundo branco */
-    color: #680b08; /* Texto na cor do vinho */
-    border: 2px solid #680b08; /* Borda sólida */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para hover */
+    background-color: rgba(214, 166, 168, 0.9); /* Cor mais escura para melhor visibilidade no hover */
+    transition: background-color 1s; /* Suaviza a transição da cor de fundo */
 }
 
 /* Estilo para hover nos botões de sugestão */
 #botaosugestao1:hover, #botaosugestao2:hover, #botaosugestao3:hover, #botaosugestao4:hover, #botaosugestao5:hover {
-    background-color: #680b08; /* Cor de fundo ao passar o mouse */
+    background-color: #e9dedd; /* Cor de fundo ao passar o mouse */
     color: #fff; /* Cor do texto ao passar o mouse */
 }
 
 /* Refinamento do hover em todos os botões de compra */
 #botaocomprar1:hover, #botaocomprar2:hover, #botaocomprar3:hover, #botaocomprar4:hover, #botaocomprar5:hover {
-    background-color: rgb(64, 8, 10, 0.9); /* Cor mais escura para melhor visibilidade no hover */
-    transition: background-color 1s; /* Suaviza a transição da cor de fundo */
+    background-color: #680b08; /* Fundo branco */
+    color: #eee4e4; /* Texto na cor do vinho */
+    border-radius: 2px solid #0000; /* Borda sólida */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para hover */
+    
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0c0c0;
+    background-color: #991F2E;;
     margin: 0;
     padding: 20px;
 }
@@ -62,3 +63,5 @@ button {
     box-sizing: border-box;
     transition: background-color 0.3s ease;
 }
+
+

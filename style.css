@@ -46,4 +46,14 @@ body {
     padding: 10px; /* Adiciona um preenchimento ao redor do texto para melhorar a legibilidade */
     border-radius:17px;
     font-size: 15px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#botaosim:hover {
+    background-color: #15d42581; /* Altera a cor de fundo ao passar o mouse */
+}
+
+#botaonao:hover {
+    background-color: rgba(255, 0, 0, 0.575);
 }
