@@ -29,4 +29,5 @@
 #### Página de Fale Conosco:
 - Um formulário simples onde caso esteja algo faltando ou letras no lugar de números em "telefone", a mensagem não é enviada. Caso esteja tudo certo é exibido um alerta.
 
-
+# Atenção!
+## Professor, por algum motivo que não consegui identificar, o nosso site não exibe todas as imagens pelo GitHub Pages, por isso abaixo colocarei também o repositório do GitHub. Acredito que as imagens em si não mudarão tanto a avaliação do html e css, mas afetará um pouco da estética do site. Obrigado!
